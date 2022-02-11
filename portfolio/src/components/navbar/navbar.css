@@ -18,6 +18,9 @@
 .gpt3__navbar-links_logo img {
   width: 20%;
   height: 20%;
+  border-radius: 40%;
+  margin-left: 20px;
+  margin-top: 20px;
 }
 
 .gpt3__navbar-links_container {
