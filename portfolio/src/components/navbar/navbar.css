@@ -20,7 +20,8 @@
   height: 20%;
   border-radius: 40%;
   margin-left: 20px;
-  margin-top: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .gpt3__navbar-links_container {

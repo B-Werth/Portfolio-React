@@ -1,5 +1,5 @@
 import { Navbar } from "./components";
-import { Header } from "./containers";
+import { Features3js } from "./containers";
 import "./App.css";
 
 function App() {
@@ -7,7 +7,9 @@ function App() {
     <div className="App">
       <div className="gradient_bg">
         <Navbar />
-        <Header />
+      </div>
+      <div>
+        <Features3js />
       </div>
     </div>
   );

@@ -12,10 +12,10 @@ const navbar = () => {
 
         <div className="gpt3__navbar-links_container">
           <p>
-            <a href="#home">Home</a>
-            <a href="#home">Home</a>
-            <a href="#home">Home</a>
-            <a href="#home">Home</a>
+            <a href="#home">Home </a>
+            <a href="#home">Home </a>
+            <a href="#home">Home </a>
+            <a href="#home">Home </a>
           </p>
         </div>
       </div>
