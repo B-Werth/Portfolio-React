@@ -49,7 +49,7 @@ const navbar = () => {
               <Text>Projekte</Text>
               <Text>Posts</Text>
               <Text>Github</Text>
-              <Text>joj</Text>
+              <Text>jojo</Text>
             </HStack>
           </Center>
         </Container>
