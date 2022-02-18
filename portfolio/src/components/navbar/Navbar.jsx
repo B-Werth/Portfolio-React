@@ -1,22 +1,8 @@
 import React from "react";
 
-import {
-  Container,
-  Box,
-  Link,
-  Stack,
-  Heading,
-  Flex,
-  Menu,
-  MenuItem,
-  MenuList,
-  MenuButton,
-  IconButton,
-  useColorModeValue,
-  Center,
-  Text,
-  HStack,
-} from "@chakra-ui/react";
+import { Logo } from "../../components";
+
+import { Container, Box, Flex, Text, HStack } from "@chakra-ui/react";
 
 const navbar = () => {
   return (
@@ -29,29 +15,19 @@ const navbar = () => {
         position="fixed"
         zIndex={5}
         css={{ backdropFilter: "blur(10px)" }}
-        bg={"#040c1840"}
+        bg={"#06122340"}
       >
-        <Container
-          display="flex"
-          p={2}
-          maxW="container.md"
-          wrap="wrap"
-          align="center"
-          justify="space-between"
-        >
-          <Center>
-            <Flex align="center" mr={5}>
-              <Heading as="h1" size="lg" letterSpacing={"tighter"}>
-                B-Werth
-              </Heading>
-            </Flex>
-            <HStack spacing="100px">
-              <Text>Projekte</Text>
-              <Text>Posts</Text>
-              <Text>Github</Text>
-              <Text>jojo</Text>
-            </HStack>
-          </Center>
+        <Container display="flex" p={3}>
+          <Flex align="center" mr={5}>
+            <Logo></Logo>
+          </Flex>
+
+          <HStack ml={50} spacing="50" display="flex" align={"center"}>
+            <Text>Projekte</Text>
+            <Text>Posts</Text>
+            <Text>Github</Text>
+            <Text>jojo</Text>
+          </HStack>
         </Container>
       </Box>
     </div>
