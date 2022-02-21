@@ -1,5 +1,6 @@
 import { Navbar } from "./components";
-import { Features3js } from "./containers";
+import { Features3js, Header } from "./containers";
+
 import "./App.css";
 
 function App() {
