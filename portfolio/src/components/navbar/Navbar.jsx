@@ -4,32 +4,46 @@ import { Logo } from "../../components";
 
 import { Container, Box, Flex, Text, HStack } from "@chakra-ui/react";
 
+import { BrowserRouter, Link } from "react-router-dom";
+
+import { Element, animateScroll as scroll } from "react-scroll";
+
 const navbar = () => {
   return (
     <div>
-      <Box
-        w="100%"
-        h={"5%"}
-        p={4}
-        color="white"
-        position="fixed"
-        zIndex={5}
-        css={{ backdropFilter: "blur(10px)" }}
-        bg={"#06122340"}
-      >
-        <Container display="flex" p={3}>
-          <Flex align="center" mr={5}>
-            <Logo></Logo>
-          </Flex>
+      <BrowserRouter>
+        <Box
+          w="100%"
+          h={"5%"}
+          p={4}
+          color="white"
+          position="fixed"
+          zIndex={5}
+          css={{ backdropFilter: "blur(10px)" }}
+          bg={"#06122340"}
+        >
+          <Container display="flex" p={3}>
+            <Flex align="center" mr={5}>
+              <Logo></Logo>
+            </Flex>
 
-          <HStack ml={50} spacing="50" display="flex" align={"center"}>
-            <Text>Projekte</Text>
-            <Text>Posts</Text>
-            <Text>Github</Text>
-            <Text>jojo</Text>
-          </HStack>
-        </Container>
-      </Box>
+            <HStack ml={50} spacing="50" display="flex" align={"center"}>
+              <Link
+                to="/projekte"
+                onClick={() => scroll.scrollTo(300, { delay: 0 })}
+              >
+                Projekte
+              </Link>
+              <Link to="/posts">Posts</Link>
+              <Link to="/Github">Github</Link>
+              <Text></Text>
+            </HStack>
+          </Container>
+        </Box>
+      </BrowserRouter>
+      <Element name="test1" className="element">
+        test 1
+      </Element>
     </div>
   );
 };
