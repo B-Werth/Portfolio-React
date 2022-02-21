@@ -12,7 +12,11 @@ const Features3js = () => {
   return (
     <div>
       <Canvas className="canvas">
-        <OrbitControls enableZoom={false} />
+        <OrbitControls
+          enableZoom={false}
+          autoRotate="true"
+          autoRotateSpeed={2}
+        />
         <ambientLight intensity={0.5} />
         <directionalLight position={[-2, 5, 2]} intensity={1} />
         <Suspense fallback={null}>
@@ -28,7 +32,7 @@ const Features3js = () => {
         </Suspense>
       </Canvas>
       <Canvas className="canvas">
-        <OrbitControls />
+        <OrbitControls enableZoom={false} />
         <ambientLight intensity={0.5} />
         <directionalLight position={[-2, 5, 2]} intensity={1} />
         <Suspense fallback={null}>

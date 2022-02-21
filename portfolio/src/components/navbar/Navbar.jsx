@@ -2,11 +2,13 @@ import React from "react";
 
 import { Logo } from "../../components";
 
-import { Container, Box, Flex, Text, HStack } from "@chakra-ui/react";
+import { Container, Box, Flex, HStack } from "@chakra-ui/react";
 
 import { BrowserRouter, Link } from "react-router-dom";
 
 import { Element, animateScroll as scroll } from "react-scroll";
+
+import "./navbar.css";
 
 const navbar = () => {
   return (
@@ -22,21 +24,26 @@ const navbar = () => {
           css={{ backdropFilter: "blur(10px)" }}
           bg={"#06122340"}
         >
-          <Container display="flex" p={3}>
+          <Container display="flex" p={3} mt={5}>
             <Flex align="center" mr={5}>
               <Logo></Logo>
             </Flex>
 
-            <HStack ml={50} spacing="50" display="flex" align={"center"}>
+            <HStack
+              ml={50}
+              spacing="50"
+              display="flex"
+              align={"center"}
+              fontSize="20px"
+            >
               <Link
                 to="/projekte"
-                onClick={() => scroll.scrollTo(300, { delay: 0 })}
+                onClick={() => scroll.scrollTo(5000, { delay: 0 })}
               >
                 Projekte
               </Link>
               <Link to="/posts">Posts</Link>
-              <Link to="/Github">Github</Link>
-              <Text></Text>
+              <Link to="/github">Github</Link>
             </HStack>
           </Container>
         </Box>

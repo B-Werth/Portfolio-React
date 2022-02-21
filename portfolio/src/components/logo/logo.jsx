@@ -18,21 +18,21 @@ const LogoBox = styled.span`
     transition: 200ms ease;
   }
   &:hover img {
-    transform: rotate(20deg);
+    transform: rotate(360deg);
   }
 `;
 
 const Logo = () => {
   return (
     <LogoBox>
-      <Image src={logoImage} width={30} height={30}></Image>
+      <Image src={logoImage} width={40} height={40}></Image>
       <Text
         color={useColorModeValue("gray.800", "whiteAlpha.900")}
-        fontFamily
         fontWeight="bold"
+        fontSize={20}
         ml={5}
       >
-        B-Werth
+        Bastian Werth
       </Text>
     </LogoBox>
   );
