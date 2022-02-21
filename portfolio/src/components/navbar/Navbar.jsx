@@ -8,6 +8,8 @@ import { BrowserRouter, Link } from "react-router-dom";
 
 import { Element, animateScroll as scroll } from "react-scroll";
 
+import { IoLogoGithub } from "react-icons/io5";
+
 import "./navbar.css";
 
 const navbar = () => {
@@ -36,14 +38,13 @@ const navbar = () => {
               align={"center"}
               fontSize="20px"
             >
-              <Link
-                to="/projekte"
-                onClick={() => scroll.scrollTo(5000, { delay: 0 })}
-              >
+              <Link to="" onClick={() => scroll.scrollTo(500)}>
                 Projekte
               </Link>
               <Link to="/posts">Posts</Link>
-              <Link to="/github">Github</Link>
+              <Link to="/github">
+                Github <IoLogoGithub />
+              </Link>
             </HStack>
           </Container>
         </Box>
