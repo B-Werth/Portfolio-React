@@ -8,7 +8,7 @@ export default function AnimatedSphere() {
       <MeshDistortMaterial
         color={"#9202FE"}
         attach="material"
-        distort={0.3}
+        distort={0.5}
         speed={2.5}
         roughness={0}
       />

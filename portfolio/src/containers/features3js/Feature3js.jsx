@@ -21,7 +21,7 @@ const Features3js = () => {
           <OrbitControls
             enableZoom={false}
             autoRotate="true"
-            autoRotateSpeed={60}
+            autoRotateSpeed={2}
           />
           <ambientLight intensity={0.5} />
           <directionalLight position={[-2, 5, 2]} intensity={1} />
