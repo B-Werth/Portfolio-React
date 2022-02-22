@@ -21,7 +21,7 @@ const Features3js = () => {
           <OrbitControls
             enableZoom={false}
             autoRotate="true"
-            autoRotateSpeed={2}
+            autoRotateSpeed={60}
           />
           <ambientLight intensity={0.5} />
           <directionalLight position={[-2, 5, 2]} intensity={1} />
@@ -43,7 +43,7 @@ const Features3js = () => {
         <ambientLight intensity={0.5} />
         <directionalLight position={[-2, 5, 2]} intensity={1} />
         <Suspense fallback={null}>
-          <Tisch position={[0, -100, -150]} />
+          <Tisch position={[0, -50, -150]} />
         </Suspense>
       </Canvas>
     </div>
