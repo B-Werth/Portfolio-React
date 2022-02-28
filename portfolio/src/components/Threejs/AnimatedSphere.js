@@ -6,10 +6,10 @@ export default function AnimatedSphere() {
   return (
     <Sphere visible args={[1, 100, 200]} scale={2}>
       <MeshDistortMaterial
-        color={"#9202FE"}
+        color={"red"}
         attach="material"
-        distort={0.5}
-        speed={2.5}
+        distort={0.4}
+        speed={5}
         roughness={0}
       />
     </Sphere>
