@@ -5,7 +5,7 @@ import { TextureLoader } from "three/src/loaders/TextureLoader";
 import texture from "../../assets/react.png";
 import texture2 from "../../assets/vuelogo.png";
 
-export default function Box({}) {
+export default function Box() {
   var textu = texture;
   var textuState = 1;
   var colorMap = useLoader(TextureLoader, textu);
