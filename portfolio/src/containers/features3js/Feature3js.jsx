@@ -12,6 +12,10 @@ import {
   Center,
   Flex,
   Spacer,
+  Text,
+  Container,
+  Badge,
+  Heading,
   HStack,
   Box as BoxC,
 } from "@chakra-ui/react";
@@ -19,11 +23,20 @@ import {
 import { vuelogo, reactlogo } from "../../assets";
 
 import "./feature3js.css";
-import { Suspense } from "react";
+import { Suspense, useState } from "react";
 
 import Header from "../header/Header";
 
+function console() {
+  window.console.log("moin");
+}
+
 const Features3js = () => {
+  const [data, setData] = useState("");
+
+  const parentToChild = () => {
+    setData("jojojo");
+  };
   return (
     <div>
       <BoxC bg="#0a1c39" w="100%" borderRadius={"full"}>
@@ -47,10 +60,15 @@ const Features3js = () => {
         <Center>
           <HStack spacing={"110px"} mt={20}>
             <motion.div whileHover={{ scale: 1.5 }}>
-              <Image src={vuelogo} h={70} w={70} />
+              <Image
+                src={vuelogo}
+                h={70}
+                w={70}
+                onPointerOver={parentToChild}
+              />
             </motion.div>
             <motion.div whileHover={{ scale: 1.5 }}>
-              <Image src={reactlogo} h={70} w={70} />
+              <Image src={reactlogo} h={70} w={70} onPointerOver={console} />
             </motion.div>
           </HStack>
         </Center>
@@ -71,6 +89,7 @@ const Features3js = () => {
           <Tisch position={[0, -50, -150]} />
         </Suspense>
       </Canvas>
+      <button onClick={console}></button>
     </div>
   );
 };

@@ -22,7 +22,7 @@ const navbar = () => {
         color="white"
         position="fixed"
         zIndex={5}
-        css={{ backdropFilter: "blur(10px)" }}
+        css={{ backdropFilter: "blur(5px)" }}
         bg={"#06122340"}
       >
         <Container display="flex" p={3} mt={5}>
@@ -42,9 +42,9 @@ const navbar = () => {
               Projekte
             </Link>
 
-            <Link to="/github">
+            <a href="https://github.com/B-Werth">
               Github <IoLogoGithub />
-            </Link>
+            </a>
           </HStack>
         </Container>
       </Box>
