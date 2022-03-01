@@ -37,7 +37,7 @@ const navbar = () => {
             align={"center"}
             fontSize="20px"
           >
-            <Link to="/posts">Skills</Link>
+            <Link to="">Skills</Link>
             <Link to="" onClick={() => scroll.scrollTo(500)}>
               Projekte
             </Link>

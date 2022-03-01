@@ -27,16 +27,13 @@ import { Suspense, useState } from "react";
 
 import Header from "../header/Header";
 
-function console() {
-  window.console.log("moin");
-}
-
 const Features3js = () => {
-  const [data, setData] = useState("");
+  var [textState, settextState] = useState(0);
 
-  const parentToChild = () => {
-    setData("jojojo");
-  };
+  function console() {
+    window.console.log(textState);
+  }
+
   return (
     <div>
       <BoxC bg="#0a1c39" w="100%" borderRadius={"full"}>
@@ -64,11 +61,16 @@ const Features3js = () => {
                 src={vuelogo}
                 h={70}
                 w={70}
-                onPointerOver={parentToChild}
+                onPointerOver={() => settextState(textState === 1)}
               />
             </motion.div>
             <motion.div whileHover={{ scale: 1.5 }}>
-              <Image src={reactlogo} h={70} w={70} onPointerOver={console} />
+              <Image
+                src={reactlogo}
+                h={70}
+                w={70}
+                onPointerOver={() => settextState(textState === 2)}
+              />
             </motion.div>
           </HStack>
         </Center>
@@ -89,7 +91,6 @@ const Features3js = () => {
           <Tisch position={[0, -50, -150]} />
         </Suspense>
       </Canvas>
-      <button onClick={console}></button>
     </div>
   );
 };
