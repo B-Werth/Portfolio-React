@@ -28,11 +28,7 @@ import { Suspense, useState } from "react";
 import Header from "../header/Header";
 
 const Features3js = () => {
-  var [textState, settextState] = useState(0);
-
-  function console() {
-    window.console.log(textState);
-  }
+  const [textState, settextState] = useState(0);
 
   return (
     <div>
@@ -61,7 +57,7 @@ const Features3js = () => {
                 src={vuelogo}
                 h={70}
                 w={70}
-                onPointerOver={() => settextState(textState === 1)}
+                onPointerOver={() => settextState(textState + 1)}
               />
             </motion.div>
             <motion.div whileHover={{ scale: 1.5 }}>
