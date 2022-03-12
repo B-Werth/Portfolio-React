@@ -41,7 +41,7 @@ const Features3js = () => {
               autoRotate="true"
               autoRotateSpeed={2}
             />
-            <ambientLight intensity={0.6} />
+            <ambientLight intensity={0.7} />
             <directionalLight position={[-2, 5, 2]} intensity={1} />
             <Suspense fallback={null}>
               <Box />
